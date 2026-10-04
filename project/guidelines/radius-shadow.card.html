@@ -1,0 +1,21 @@
+<!-- @dsCard group="Spacing" viewport="700x180" subtitle="Soft minimal radii; borders do more work than shadow" name="Radius & Elevation" -->
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{padding:16px;background:var(--bg-page);}
+  .row{display:flex;gap:12px;}
+  .box{flex:1;height:72px;background:var(--surface-card);border:1px solid var(--border-default);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--text-muted);}
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="box" style="border-radius:var(--radius-sm);">sm 4</div>
+    <div class="box" style="border-radius:var(--radius-md);">md 8</div>
+    <div class="box" style="border-radius:var(--radius-lg);">lg 12</div>
+    <div class="box" style="border-radius:var(--radius-xl);">xl 16</div>
+    <div class="box" style="border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border-color:transparent;">shadow-sm</div>
+    <div class="box" style="border-radius:var(--radius-md);box-shadow:var(--shadow-md);border-color:transparent;">shadow-md</div>
+  </div>
+</body>
+</html>

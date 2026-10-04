@@ -1,0 +1,18 @@
+<!-- @dsCard group="Spacing" viewport="700x180" subtitle="Block spacing between document blocks, not decorative sections" name="Block Spacing In Use" -->
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{padding:20px;background:var(--bg-page);}
+  .block{padding:10px 12px;background:var(--surface-muted);border-radius:var(--radius-sm);}
+  .doc > * + *{margin-top:var(--block-gap);}
+</style>
+</head>
+<body>
+  <div class="doc">
+    <div class="block text-body-sm">Block A — var(--block-gap) = 16px below</div>
+    <div class="block text-body-sm">Block B</div>
+    <div class="block text-body-sm">Block C</div>
+  </div>
+</body>
+</html>

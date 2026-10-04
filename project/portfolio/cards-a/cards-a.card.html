@@ -1,0 +1,33 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Case Study Card, Project Block, Metric, Capability" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page-warm);}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { CaseStudyCard, ProjectBlock, MetricCard, CapabilityCard } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  return (
+    <div>
+      <div className="grid" style={{marginBottom:14}}>
+        <CaseStudyCard title="Onboarding Redesign" summary="Cut signup drop-off by 34% with a guided first-run flow." tags={['SaaS','Onboarding']} year="2025" />
+        <MetricCard value="34%" label="Drop-off reduction" delta="+12 pts vs. baseline" />
+      </div>
+      <div className="grid" style={{marginBottom:14}}>
+        <CapabilityCard icon="◆" title="Product Strategy" description="Turning ambiguous problems into shippable roadmaps." />
+        <CapabilityCard icon="✦" title="Design Systems" description="Tokens, components, and docs that scale a team." />
+      </div>
+      <ProjectBlock label="01" title="Design System v2" description="Rebuilt tokens and components for the design org." meta="6 mo · Lead" />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

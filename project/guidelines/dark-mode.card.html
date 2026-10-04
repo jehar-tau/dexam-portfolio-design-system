@@ -1,0 +1,39 @@
+<!-- @dsCard group="Colors" viewport="700x300" subtitle="Same tokens, dark-charcoal scope — apply data-theme=&quot;dark&quot;" name="Dark Mode" -->
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;display:grid;grid-template-columns:1fr 1fr;}
+  .panel{padding:20px;}
+  .row{display:flex;gap:8px;margin-bottom:10px;}
+  .swatch{flex:1;height:52px;border-radius:var(--radius-md);border:1px solid var(--border-default);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:10px;}
+  .card{border:1px solid var(--border-default);border-radius:var(--radius-md);padding:12px;background:var(--surface-card);margin-top:8px;}
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="text-label" style="margin-bottom:8px;">Light</div>
+    <div class="row">
+      <div class="swatch" style="background:var(--bg-page-warm);">warm bg</div>
+      <div class="swatch" style="background:var(--surface-muted);">muted</div>
+      <div class="swatch" style="background:var(--color-primary);color:#fff;">primary</div>
+    </div>
+    <div class="card">
+      <div class="text-h3">Card surface</div>
+      <div class="text-body-sm">Body text on light.</div>
+    </div>
+  </div>
+  <div class="panel" data-theme="dark" style="background:var(--bg-page);">
+    <div class="text-label" style="margin-bottom:8px;">Dark — data-theme="dark"</div>
+    <div class="row">
+      <div class="swatch" style="background:var(--bg-page-warm);">warm bg</div>
+      <div class="swatch" style="background:var(--surface-muted);">muted</div>
+      <div class="swatch" style="background:var(--color-primary);color:var(--text-on-primary);">primary</div>
+    </div>
+    <div class="card">
+      <div class="text-h3">Card surface</div>
+      <div class="text-body-sm">Body text on dark.</div>
+    </div>
+  </div>
+</body>
+</html>

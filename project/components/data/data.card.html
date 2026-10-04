@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" viewport="700x360" name="Table, Data Row, Metadata Bar, Avatar" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page);}.section{margin-bottom:18px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { Table, DataRow, MetadataBar, Avatar } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  return (
+    <div>
+      <div className="section"><Table columns={[{key:'name',label:'Project'},{key:'status',label:'Status'},{key:'year',label:'Year'}]} rows={[{name:'Onboarding Redesign',status:'Shipped',year:'2025'},{name:'Design System v2',status:'In progress',year:'2026'}]} /></div>
+      <div className="section" style={{border:'1px solid var(--border-default)',borderRadius:8}}>
+        <DataRow primary="Onboarding Redesign" secondary="Case study" meta="2024" onClick={()=>{}} />
+        <DataRow primary="Design Principles" secondary="Notes" meta="2023" onClick={()=>{}} />
+      </div>
+      <div className="section"><MetadataBar items={[{label:'Updated Jul 2026'},{label:'6 min read'},{label:'Product Design'}]} /></div>
+      <div className="section" style={{display:'flex',gap:10}}>
+        <Avatar name="Snehal Kumar" size="sm" />
+        <Avatar name="Snehal Kumar" size="md" />
+        <Avatar name="Snehal Kumar" size="lg" />
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

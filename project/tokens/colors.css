@@ -1,0 +1,99 @@
+/* ============================================================
+   COLOR TOKENS — Notion-inspired, earthy orange
+   ============================================================ */
+:root {
+  /* Base neutrals */
+  --color-white: #FFFFFF;
+  --color-warm-bg: #FAF7F2;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F6F1EA;
+  --color-border-light: #E7E1D8;
+  --color-border-medium: #D6CBBF;
+
+  --color-text-primary: #191711;
+  --color-text-secondary: #5F5A52;
+  --color-text-muted: #8A8177;
+
+  /* Brand — earthy orange */
+  --color-primary: #C76A2D;
+  --color-primary-hover: #A95522;
+  --color-primary-active: #8F461B;
+  --color-primary-soft: #F4E2D3;
+  --color-primary-extra-soft: #FBF1E8;
+
+  /* Semantic feedback (muted, kept in-family with the warm palette) */
+  --color-success: #4C7A4F;
+  --color-success-soft: #E7EFE3;
+  --color-warning: #B8863B;
+  --color-warning-soft: #F6EBD6;
+  --color-danger: #B23B2E;
+  --color-danger-soft: #F6E1DC;
+  --color-info: #3F6C8A;
+  --color-info-soft: #E4EDF2;
+
+  /* Focus ring */
+  --color-focus-ring: #C76A2D;
+  --color-focus-ring-offset: #FFFFFF;
+
+  /* ---- Semantic aliases ---- */
+  --bg-page: var(--color-white);
+  --bg-page-warm: var(--color-warm-bg);
+  --surface-card: var(--color-surface);
+  --surface-muted: var(--color-surface-muted);
+  --surface-selected: var(--color-primary-extra-soft);
+  --surface-hover: var(--color-surface-muted);
+
+  --border-default: var(--color-border-light);
+  --border-strong: var(--color-border-medium);
+  --border-selected: var(--color-primary);
+
+  --text-body: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --text-on-primary: #FFF9F4;
+  --text-link: var(--color-primary);
+
+  --accent-primary: var(--color-primary);
+  --accent-primary-hover: var(--color-primary-hover);
+  --accent-primary-active: var(--color-primary-active);
+  --accent-soft: var(--color-primary-soft);
+  --accent-extra-soft: var(--color-primary-extra-soft);
+}
+
+/* ============================================================
+   DARK MODE — apply data-theme="dark" to <html> or any container.
+   Same token/alias names, warm-charcoal palette + a lightened
+   earthy orange for AA contrast on dark surfaces.
+   ============================================================ */
+[data-theme="dark"] {
+  --color-white: #17140F;
+  --color-warm-bg: #1E1912;
+  --color-surface: #201B14;
+  --color-surface-muted: #2A231A;
+  --color-border-light: #382F22;
+  --color-border-medium: #4A3E2C;
+
+  --color-text-primary: #F3EEE4;
+  --color-text-secondary: #C4BCAC;
+  --color-text-muted: #8C8375;
+
+  --color-primary: #E2895A;
+  --color-primary-hover: #EFA679;
+  --color-primary-active: #C76A2D;
+  --color-primary-soft: #3D2A1C;
+  --color-primary-extra-soft: #2C2116;
+
+  --color-success: #7CAE7F;
+  --color-success-soft: #223327;
+  --color-warning: #D6A85D;
+  --color-warning-soft: #362A17;
+  --color-danger: #E08272;
+  --color-danger-soft: #3A2420;
+  --color-info: #7FADC9;
+  --color-info-soft: #1F2E36;
+
+  --color-focus-ring: #E2895A;
+  --color-focus-ring-offset: #17140F;
+
+  --text-on-primary: #1B1409;
+}

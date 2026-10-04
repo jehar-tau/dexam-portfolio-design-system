@@ -1,0 +1,28 @@
+<!-- @dsCard group="Brand" viewport="700x180" subtitle="Lucide (CDN) — thin 1.5px stroke, matches calm/minimal tone" name="Iconography" -->
+<html>
+<head>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{padding:20px;background:var(--bg-page);}
+  .row{display:flex;gap:20px;align-items:center;color:var(--text-body);}
+  .row svg{width:22px;height:22px;stroke:var(--color-primary);}
+  .cap{margin-top:12px;}
+</style>
+</head>
+<body>
+  <div class="row">
+    <i data-lucide="layout-grid"></i>
+    <i data-lucide="file-text"></i>
+    <i data-lucide="folder"></i>
+    <i data-lucide="check-square"></i>
+    <i data-lucide="chevron-right"></i>
+    <i data-lucide="more-horizontal"></i>
+    <i data-lucide="link"></i>
+    <i data-lucide="tag"></i>
+    <i data-lucide="arrow-up-right"></i>
+  </div>
+  <div class="cap text-caption">No icon set was provided in source materials — Lucide is substituted (thin stroke, geometric, neutral) and loaded via CDN.</div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

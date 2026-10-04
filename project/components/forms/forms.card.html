@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" viewport="700x360" name="Input, Textarea, Select, Checkbox" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page);}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { Input, Textarea, Select, Checkbox } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  const [checked, setChecked] = React.useState(true);
+  return (
+    <div className="grid">
+      <Input label="Email" placeholder="you@studio.com" />
+      <Input label="Name" error="Required field" />
+      <Select label="Role" options={['Designer','Engineer','PM']} />
+      <Checkbox label="Subscribe to updates" checked={checked} onChange={()=>setChecked(!checked)} />
+      <div style={{gridColumn:'1 / -1'}}><Textarea label="Message" placeholder="Tell me about the project…" /></div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

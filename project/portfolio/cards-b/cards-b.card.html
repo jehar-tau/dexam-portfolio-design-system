@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Experience, Insight, Decision, Impact, Problem, Principle" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page);}.section{margin-bottom:14px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { ExperienceCard, InsightCard, DecisionCard, ImpactCard, ProblemCard, PrincipleCard } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  return (
+    <div>
+      <div className="section"><ProblemCard title="Signup felt like a form, not a welcome" context="34% of new users dropped before finishing setup." /></div>
+      <div className="section"><InsightCard title="Users abandoned setup at step 3" body="Interviews showed the permissions screen felt like a wall." /></div>
+      <div className="section"><DecisionCard decision="Single-column onboarding" rationale="Reduced cognitive load during setup." tradeoff="Longer scroll on mobile." /></div>
+      <div className="section"><ImpactCard metric="+18%" description="Activation rate within first session." tone="success" /></div>
+      <div className="section"><ExperienceCard period="2022–Now" role="Senior Product Designer" company="Acme" description="Led design for the core workspace product." /></div>
+      <div className="section"><PrincipleCard number="01" title="Clarity over cleverness" description="If it needs a tooltip to explain, simplify it." /></div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Document Page, Toggle, Quote, Side Note, Linked Page" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page);}.section{margin-bottom:16px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { ToggleBlock, QuoteBlock, SideNoteBlock, LinkedPageCard, MetadataBar } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  return (
+    <div>
+      <div className="section"><ToggleBlock label="Full research methodology" defaultOpen>We ran 12 moderated sessions and reviewed funnel analytics over 8 weeks.</ToggleBlock></div>
+      <div className="section"><QuoteBlock quote="This is the first onboarding that didn't make me feel lost." attribution="Beta user, Oct 2025" /></div>
+      <div className="section"><SideNoteBlock>Metrics reflect a 4-week post-launch window.</SideNoteBlock></div>
+      <div className="section"><LinkedPageCard title="Design System v2" breadcrumb="Work / Case Studies" /></div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

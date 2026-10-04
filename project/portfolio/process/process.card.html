@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" viewport="700x280" name="Process Step" -->
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;background:var(--bg-page);}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { ProcessStep } = window.SnehalKumarPortfolioDesignSystem_b299f1;
+function Demo(){
+  return (
+    <div>
+      <ProcessStep index="1" title="Research" description="Interviewed 12 users about onboarding friction." />
+      <ProcessStep index="2" title="Design" description="Prototyped three onboarding flows." />
+      <ProcessStep index="3" title="Ship" description="Rolled out to 100% of new signups." isLast />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

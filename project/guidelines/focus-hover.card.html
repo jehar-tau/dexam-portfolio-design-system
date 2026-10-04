@@ -1,0 +1,15 @@
+<!-- @dsCard group="Brand" viewport="700x160" subtitle="Orange focus ring, subtle hover backgrounds, selected state" name="Interaction States" -->
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{padding:20px;background:var(--bg-page);display:flex;gap:12px;align-items:center;}
+  .demo{padding:10px 14px;border-radius:var(--radius-md);font-family:var(--font-sans);font-size:14px;border:1px solid var(--border-default);}
+</style>
+</head>
+<body>
+  <div class="demo" style="background:var(--surface-hover);">Hover background</div>
+  <div class="demo" style="background:var(--surface-selected);border-color:var(--border-selected);color:var(--color-primary-hover);">Selected (soft orange)</div>
+  <div class="demo" style="box-shadow:var(--shadow-focus-ring);border-color:var(--color-primary);">Focus ring</div>
+</body>
+</html>
